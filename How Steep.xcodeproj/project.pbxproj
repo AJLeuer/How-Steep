@@ -15,6 +15,7 @@
 		66E9BF892678645700E466A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E9BF872678645700E466A1 /* LaunchScreen.storyboard */; };
 		66E9BF942678645700E466A1 /* How_SteepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9BF932678645700E466A1 /* How_SteepTests.swift */; };
 		66E9BF9F2678645700E466A1 /* How_SteepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9BF9E2678645700E466A1 /* How_SteepUITests.swift */; };
+		66E9BFAD26786D1100E466A1 /* OrientationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9BFAC26786D1100E466A1 /* OrientationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		66E9BF9A2678645700E466A1 /* How SteepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "How SteepUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E9BF9E2678645700E466A1 /* How_SteepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = How_SteepUITests.swift; sourceTree = "<group>"; };
 		66E9BFA02678645700E466A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66E9BFAC26786D1100E466A1 /* OrientationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				66E9BF872678645700E466A1 /* LaunchScreen.storyboard */,
 				66E9BF8A2678645700E466A1 /* Info.plist */,
 				66E9BF842678645700E466A1 /* Preview Content */,
+				66E9BFAC26786D1100E466A1 /* OrientationService.swift */,
 			);
 			path = "How Steep";
 			sourceTree = "<group>";
@@ -199,7 +202,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Adam James Leuer";
 				TargetAttributes = {
 					66E9BF782678645400E466A1 = {
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66E9BF7D2678645400E466A1 /* AppDelegate.swift in Sources */,
+				66E9BFAD26786D1100E466A1 /* OrientationService.swift in Sources */,
 				66E9BF7F2678645400E466A1 /* SceneDelegate.swift in Sources */,
 				66E9BF812678645400E466A1 /* ContentView.swift in Sources */,
 			);
@@ -342,6 +346,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -402,6 +407,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -434,8 +440,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"How Steep/Preview Content\"";
+				DEVELOPMENT_TEAM = DX363355U9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "How Steep/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -444,6 +452,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "AJL.How-Steep";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -453,8 +462,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"How Steep/Preview Content\"";
+				DEVELOPMENT_TEAM = DX363355U9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "How Steep/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -463,6 +474,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "AJL.How-Steep";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -558,7 +570,7 @@
 				66E9BFA22678645700E466A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		66E9BFA32678645700E466A1 /* Build configuration list for PBXNativeTarget "How Steep" */ = {
 			isa = XCConfigurationList;
@@ -567,7 +579,7 @@
 				66E9BFA52678645700E466A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		66E9BFA62678645700E466A1 /* Build configuration list for PBXNativeTarget "How SteepTests" */ = {
 			isa = XCConfigurationList;
@@ -576,7 +588,7 @@
 				66E9BFA82678645700E466A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		66E9BFA92678645700E466A1 /* Build configuration list for PBXNativeTarget "How SteepUITests" */ = {
 			isa = XCConfigurationList;
@@ -585,7 +597,7 @@
 				66E9BFAB2678645700E466A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

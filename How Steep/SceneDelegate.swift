@@ -1,11 +1,3 @@
-//
-//  SceneDelegate.swift
-//  How Steep
-//
-//  Created by Adam James Leuer on 6/14/21.
-//  Copyright © 2021 Adam James Leuer. All rights reserved.
-//
-
 import UIKit
 import SwiftUI
 
