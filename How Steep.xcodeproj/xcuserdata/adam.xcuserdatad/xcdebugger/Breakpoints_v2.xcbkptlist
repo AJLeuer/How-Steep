@@ -20,5 +20,69 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B2E6B672-E8A4-452D-8DA2-5DF6277C6AAB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "How Steep/Service/OrientationService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6202D76-6319-4A01-BF4F-BFD24F0FE4A1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "How Steep/Service/OrientationService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "OrientationService"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "A6202D76-6319-4A01-BF4F-BFD24F0FE4A1 - 8dec3704eabbb8f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "How_Steep.OrientationService.deinit"
+                  moduleName = "How Steep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adam/Developer/How%20Steep/How%20Steep/Service/OrientationService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "A6202D76-6319-4A01-BF4F-BFD24F0FE4A1 - f0e57277071c1234"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "How_Steep.OrientationService.__deallocating_deinit"
+                  moduleName = "How Steep"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adam/Developer/How%20Steep/How%20Steep/Service/OrientationService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

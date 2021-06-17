@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D9B84EF32EC82C4E4B296A6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B83B2672C73201CF7406C /* Extensions.swift */; };
+		6667308A267AE7C500C18683 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66673089267AE7C500C18683 /* Utility.swift */; };
 		66E9BF7D2678645400E466A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9BF7C2678645400E466A1 /* AppDelegate.swift */; };
 		66E9BF7F2678645400E466A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9BF7E2678645400E466A1 /* SceneDelegate.swift */; };
 		66E9BF812678645400E466A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9BF802678645400E466A1 /* ContentView.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D9B83B2672C73201CF7406C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		66673089267AE7C500C18683 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		66E9BF792678645400E466A1 /* How Steep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "How Steep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E9BF7C2678645400E466A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66E9BF7E2678645400E466A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66673087267AE77800C18683 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				66E9BFAC26786D1100E466A1 /* OrientationService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		66673088267AE7AE00C18683 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				66673089267AE7C500C18683 /* Utility.swift */,
+				2D9B83B2672C73201CF7406C /* Extensions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		66E9BF702678645400E466A1 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +122,8 @@
 		66E9BF7B2678645400E466A1 /* How Steep */ = {
 			isa = PBXGroup;
 			children = (
+				66673088267AE7AE00C18683 /* Utility */,
+				66673087267AE77800C18683 /* Service */,
 				66E9BF7C2678645400E466A1 /* AppDelegate.swift */,
 				66E9BF7E2678645400E466A1 /* SceneDelegate.swift */,
 				66E9BF802678645400E466A1 /* ContentView.swift */,
@@ -108,7 +131,6 @@
 				66E9BF872678645700E466A1 /* LaunchScreen.storyboard */,
 				66E9BF8A2678645700E466A1 /* Info.plist */,
 				66E9BF842678645700E466A1 /* Preview Content */,
-				66E9BFAC26786D1100E466A1 /* OrientationService.swift */,
 			);
 			path = "How Steep";
 			sourceTree = "<group>";
@@ -270,10 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6667308A267AE7C500C18683 /* Utility.swift in Sources */,
 				66E9BF7D2678645400E466A1 /* AppDelegate.swift in Sources */,
 				66E9BFAD26786D1100E466A1 /* OrientationService.swift in Sources */,
 				66E9BF7F2678645400E466A1 /* SceneDelegate.swift in Sources */,
 				66E9BF812678645400E466A1 /* ContentView.swift in Sources */,
+				2D9B84EF32EC82C4E4B296A6 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

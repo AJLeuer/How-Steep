@@ -5,21 +5,25 @@ import CoreMotion
 struct ContentView: View
 {
     @ObservedObject
-    var orientationService : OrientationService = OrientationService()
-    
+    var orientationService : OrientationService
+
+    init(orientationService: OrientationService)
+    {
+        self.orientationService = orientationService
+    }
+
     var body: some View
     {
-        Text(formatGradient())
+        Text(formatGradientForDisplay(gradient: orientationService.gradient))
             .font(.system(size: 120.0))
-    }
-    
-    func formatGradient() -> String
-    {
-        let gradient : Double = orientationService.gradient
-        let numberFormatter = NumberFormatter()
-        numberFormatter.numberStyle = NumberFormatter.Style.percent
-        
-        return numberFormatter.string(from: gradient as NSNumber)!
+        Button(action: orientationService.saveCurrentGradientAsOffset)
+        {
+            Text("Set Baseline")
+        }
+        .padding()
+        .foregroundColor(.white)
+        .background(LinearGradient(gradient: Gradient(colors: [Color(UIColor(rgb: 0x00bdff)), Color(UIColor(rgb: 0x005e80))]), startPoint: .leading, endPoint: .trailing))
+        .cornerRadius(15)
     }
 }
 
@@ -27,7 +31,7 @@ struct ContentView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        ContentView()
+        ContentView(orientationService: OrientationService())
     }
 }
 
